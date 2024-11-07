@@ -1,1 +1,7 @@
+header {
+  background: url(images/rock_back.jpg);
+}
 
+.bg-light {
+  opacity: 50%;
+}
