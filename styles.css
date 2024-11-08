@@ -1,7 +1,16 @@
 header {
   background: url(images/rock_back.jpg);
+  background-size: cover;
 }
 
 .bg-light {
   opacity: 50%;
 }
+
+.Carousel {
+  background-color: aqua;
+  max-height: 400px !important;
+}
+
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
