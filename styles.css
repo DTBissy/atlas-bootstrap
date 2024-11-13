@@ -6,3 +6,8 @@
 .bg-light {
   opacity: 50%;
 }
+
+.drop {
+  height: 300px;
+  position: relative;
+}
