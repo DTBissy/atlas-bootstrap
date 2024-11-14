@@ -11,3 +11,9 @@
   height: 300px;
   position: relative;
 }
+
+
+
+.carousel-inner {
+  padding: 0 .5rem;
+}
