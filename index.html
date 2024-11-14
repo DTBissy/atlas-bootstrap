@@ -18,7 +18,7 @@
 
 </head>
 
-<body>
+<body class="px-2">
   <div>
     <!--Header -->
     <main>
@@ -32,10 +32,9 @@
               alt="Menu">
             <div class="collapse navbar-collapse" id="Nav">
               <div class="navbar-na">
-                <a href="#" class="nav-link text-right" style="color: #E9D4CA">About us </a>
-                <a href="#home" class="nav-link text-right" style="color: #81482C;">Rock Shop </a>
-                <a href="#home" class="nav-link text-right " style="color:#E9D4CA;">Rock Knowledge </a>
-                <a href="#home" class="nav-link text-right" style="color: #81482C;">The Esteemed Rock
+                <a href="#RockShop" class="nav-link text-right" style="color: #81482C;">Rock Shop </a>
+                <a href="#RockKnowledge" class="nav-link text-right " style="color:#E9D4CA;">Rock Knowledge </a>
+                <a href="#EsteemedRock" class="nav-link text-right" style="color: #81482C;">The Esteemed Rock
                 </a>
                 <a href="#home" class="nav-link text-right" style="color:#E9D4CA;">The Rock Block</a>
                 </ul>
@@ -70,7 +69,6 @@
   <section>
     <div>
       <div class="rounded" style="background-color: #E9D4CA;">
-        <h1 class="text-center">Customers</h1>
         <div class="Carousel">
         </div>
         <div id="Slides" class="carousel slide" data-ride="carousel">
@@ -167,170 +165,242 @@
     </div>
   </section>
   <!--Multiple Item Carousel-->
-  <section>
+  <section class="RockShop">
   </section>
   <!--Drop Down Menu(Rock Knowledge)-->
+  <section id="RockKnowledge">
+    <div class="" style="background-color: #E9D4CA;">
+      <h1 class="text-center">Rock Knowledge Search</h1>
+      <p class="text-center">What rocks might you be in interested in?</p>
+      <div>
+        <div class="dropdown mx-3 text-center rounded" style="height: 100px; background-color: #81482C;">
+          <button class="btn btn-lg dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Rock type
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <button class="dropdown-item" type="button" onclick="showGenre(this)">Igneous</button>
+            <button class="dropdown-item" type="button" onclick="showGenre(this)">Sedimentary</button>
+            <button class="dropdown-item" type="button" onclick="showGenre(this)">Metamorphic</button>
+          </div>
+          <script>function showGenre(item) {
+              document.getElementById("dropdownMenu1").innerHTML = item.innerHTML;
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Free Section Collapse-->
   <section>
-    <div class="" style="background-color: #81482C;">
-      <div class="rounded" style="background-color: #E9D4CA;">
+    <div class="" style="background-color: #E9D4CA;">
+      <div class="rounded">
         <h1 class="display-4 text-center">Rock Knowledge</h1>
         <p class="text-center mb-0">Welcome to the Learning Area. On this part of the website we have some beginner rock
           facts
           with links in the case
           that your curious. </p>
       </div>
-      <div class="accordion" id="RockCollapse" style="background-color: #81482C; height: 600px;">
-        <div class="card">
-          <div class="card-header" id="headingOne">
-            <h2 class="mb-0">
-              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#make" aria-expanded="true"
-                aria-controls="collapseOne">
-                Ingenous Rocks
-              </button>
-            </h2>
-          </div>
-
-          <div id="make" class="collapse show" aria-labelledby="headingOne" data-parent="#RockCollapse">
-            <div class="card-body">
-              <p>Ingenous rocks are "Fire-Born", isn't that kinda cool?. Means they are formed from the cooling and
-                solidification of molten(melted) rock. The word "igneous" derives from ignis, the latin word for fire.
-                Molten
-                rock material is known as magma until it is erupted onto the surface when it then is termed lava. </p>
-              <p>There are two broad types of igneous rocks:
-              <ul>
-                <li>Intrusive (plutonic) rocks</li>
-                <li>Extrusive (volcanic) rocks</li>
-              </ul>
-              </p>
-              <p><b>Intrusive igneous</b> rocks solidify within Earth. These rocks are also known as plutonic
-                rocks—named for
-                Pluto,
-                the Roman god of the underworld. Intrusive igneous rocks are generally wholly crystalline and
-                characterized by
-                large crystal sizes visible to the naked eye because they cool slowly.</p>
-              <p><b>Extrusive igneous rocks</b>re erupted onto the surface or into the atmosphere. Extrusive igneous
-                rocks are
-                also termed volcanic rocks—named for Vulcan, the Roman god of fire. Volcanic rocks have generally
-                smaller
-                crystal size and usually have a very-fine-grained or glassy groundmass that formed due to rapid
-                cooling
-                at the
-                time of eruption.
-
-                Volcanic rocks are erupted as lava flows or lava domes during nonexplosive (effusive) eruptions or as
-                shattered
-                bits of rock (volcanic ash, tephra, and volcanic bombs which are collectively called pyroclasts)
-                during
-                explosive eruptions. Pyroclastic rocks are made of volcanic ash and other pieces of pulverized
-                volcanic
-                rock.
-                The term pyroclastic means “fire-broken” from “pryo-” (fire) and “-clastic” (broken) in Greek.
-                Pyroclastic rocks
-                include ash-fall and tephra-fall deposits as well as ash-flow tuffs (ignimbrites) that form from
-                pyroclastic
-                density currents.</p>
-            </div>
-            <div class="dropdown">
-              <a href="#" class="btn btn-secondary btn-lg dropdown-toggle" role="button" id="Ingenous"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ingenous</a>
-              <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenu">
-                <a href="https://www.nps.gov/subjects/geology/igneous.htm#:~:text=by%20Eva%20DiDonato.-,Introduction,of%20molten%20(melted)%20rock."
-                  class="dropdown-item" data-target="#Ingenous"> Igneous Rocks: Formed from the cooling and
-                  solidification of molten rock (magma or lava). Examples include granite and basalt.</a>
-              </div>
-            </div>
-          </div>
+      <div class="py-5 mx-5">
+        <div class="accordion rounded" id="RockCollapse" style="background-color: #81482C;">
           <div class="card">
-            <div class="card-header" id="headingTwo">
+            <div class="card-header" id="headingOne" style="background-color: #81482C;">
               <h2 class="mb-0">
-                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Sedimentary"
-                  aria-expanded="false" aria-controls="collapseTwo">
-                  Sedimentary Rocks
+                <button class="btn btn-link text-white" type="button" data-toggle="collapse" data-target="#make"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  Ingenous Rocks
                 </button>
               </h2>
             </div>
-            <div id="Sedimentary" class="collapse" aria-labelledby="headingTwo" data-parent="#RockCollapse">
-              <div class="card-body">
-                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                wolf
-                moon
-                officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
-                Brunch
-                3
-                wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
-                et.
-                Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
-                vegan
-                excepteur butcher vice lomo. Leggings occaecat craft beer
-              </div>
-              <div class="dropdown">
-                <a href="#" class="btn btn-secondary btn-lg dropdown-toggle" role="button" id="Ingenous"
-                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sedimentary</a>
-                <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenu">
-                  <a href="https://www.nps.gov/subjects/geology/sedimentary.htm#:~:text=NPS%20photo.-,Introduction,accumulate%20on%20the%20Earth's%20surface."
-                    class=" dropdown-item" data-target="#Ingenous"> Sedimentary Rocks: Formed from the accumulation of
-                    sediments, such as sand,
-                    mud, and organic matter, which are compacted and cemented together over time</a>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-header" id="headingThree">
-                <h2 class="mb-0">
-                  <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#Metamorphic"
-                    aria-expanded="false" aria-controls="collapseThree">
-                    Metamorphic Rocks
-                  </button>
-                </h2>
-              </div>
-              <div id="Metamorphic" class="collapse" aria-labelledby="headingThree" data-parent="#RockCollapse">
-                <div class="card-body">
-                  Saepe in natura, lapides variis formis et coloribus inveniuntur, qui tam in terra quam in montibus,
-                  fluminibus et oceanis abundant. Hi materiae durissimae sunt, et eorum structura, compositione atque
-                  proprietatibus multum diversificantur. Exempli gratia, lapides ignei, sicut granitium et basaltus, ex
-                  liquido magma orta sunt, dum lapides sedimentarii, ut lutum et calcis, ex particulis in agua vel aere
-                  delubris depositis formantur. Alia vero genera, sicut schistus et gneiss, ex metamorphosi lapidum
-                  praeexistentium evolvuntur, ubi calor et pressio profunda eos ad novam structuram transformant.
-                  Lapides non solum pulchritudinem naturae ostendunt, sed etiam in variis culturis usus magni momenti
-                  sunt, ad aedificationem, ornamentum, et etiam medicinae. Fossilia et mineralia, quae in iis inclusa
-                  sunt, praebent multa indicia de historia geologica terrae, et per studium eorum, homines multa de
-                  evolutione planeti nostri ac de temporibus praeteritis cognoscere possunt. Eorum longissima vita et
-                  resistentia erosionis eos inter materiam durissimam et stabilem faciunt, quae tam in contextu
-                  geologico quam in usibus quotidianis hominum praeclaram locum tenet.
-                </div>
-                <div class="dropdown">
-                  <a href="#" class="btn btn-secondary btn-lg dropdown-toggle" role="button" id="Ingenous"
-                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Metamorphic</a>
-                  <div class="dropdown-menu dropdown-menu-right " aria-labelledby="dropdownMenu">
-                    <a href="https://www.nps.gov/subjects/geology/metamorphic.htm" class="dropdown-item"
-                      data-target="#Ingenous"> Metamorphic Rocks: Formed from existing rocks that are
-                      subjected to heat, pressure, or chemical processes, causing them to change in form and
-                      structure.</a>
-                  </div>
 
-                </div>
+            <div id="make" class="collapse show" aria-labelledby="headingOne" data-parent="#RockCollapse"
+              style="background-color: #E9D4CA;">
+              <div class="card-body">
+                <p>Ingenous rocks are "Fire-Born", isn't that kinda cool?. Means they are formed from the cooling and
+                  solidification of molten(melted) rock. The word "igneous" derives from ignis, the latin word for fire.
+                  Molten
+                  rock material is known as magma until it is erupted onto the surface when it then is termed lava. </p>
+                <p>There are two broad types of igneous rocks:
+                <ul>
+                  <li>Intrusive (plutonic) rocks</li>
+                  <li>Extrusive (volcanic) rocks</li>
+                </ul>
+                </p>
+                <p><b>Intrusive igneous</b> rocks solidify within Earth. These rocks are also known as plutonic
+                  rocks—named for
+                  Pluto,
+                  the Roman god of the underworld. Intrusive igneous rocks are generally wholly crystalline and
+                  characterized by
+                  large crystal sizes visible to the naked eye because they cool slowly.</p>
+                <p><b>Extrusive igneous rocks</b>re erupted onto the surface or into the atmosphere. Extrusive igneous
+                  rocks are
+                  also termed volcanic rocks—named for Vulcan, the Roman god of fire. Volcanic rocks have generally
+                  smaller
+                  crystal size and usually have a very-fine-grained or glassy groundmass that formed due to rapid
+                  cooling
+                  at the
+                  time of eruption.
+
+                  Volcanic rocks are erupted as lava flows or lava domes during nonexplosive (effusive) eruptions or as
+                  shattered
+                  bits of rock (volcanic ash, tephra, and volcanic bombs which are collectively called pyroclasts)
+                  during
+                  explosive eruptions. Pyroclastic rocks are made of volcanic ash and other pieces of pulverized
+                  volcanic
+                  rock.
+                  The term pyroclastic means “fire-broken” from “pryo-” (fire) and “-clastic” (broken) in Greek.
+                  Pyroclastic rocks
+                  include ash-fall and tephra-fall deposits as well as ash-flow tuffs (ignimbrites) that form from
+                  pyroclastic
+                  density currents.</p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo" style="background-color: #81482C;">
+            <h2 class="mb-0">
+              <button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse"
+                data-target="#Sedimentary" aria-expanded="false" aria-controls="collapseTwo">
+                Sedimentary Rocks
+              </button>
+            </h2>
+          </div>
+          <div id="Sedimentary" class="collapse" aria-labelledby="headingTwo" data-parent="#RockCollapse"
+            style="background-color: #E9D4CA;">
+            <div class="card-body">
+              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
+              wolf
+              moon
+              officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+              Brunch
+              3
+              wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch
+              et.
+              Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad
+              vegan
+              excepteur butcher vice lomo. Leggings occaecat craft beer
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header" id="headingThree" style="background-color: #81482C;">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed text-white" type="button" data-toggle="collapse"
+                  data-target="#Metamorphic" aria-expanded="false" aria-controls="collapseThree">
+                  Metamorphic Rocks
+                </button>
+              </h2>
+            </div>
+            <div id="Metamorphic" class="collapse" aria-labelledby="headingThree" data-parent="#RockCollapse"
+              style="background-color: #E9D4CA;">
+              <div class="card-body">
+                Saepe in natura, lapides variis formis et coloribus inveniuntur, qui tam in terra quam in montibus,
+                fluminibus et oceanis abundant. Hi materiae durissimae sunt, et eorum structura, compositione atque
+                proprietatibus multum diversificantur. Exempli gratia, lapides ignei, sicut granitium et basaltus,
+                ex
+                liquido magma orta sunt, dum lapides sedimentarii, ut lutum et calcis, ex particulis in agua vel
+                aere
+                delubris depositis formantur. Alia vero genera, sicut schistus et gneiss, ex metamorphosi lapidum
+                praeexistentium evolvuntur, ubi calor et pressio profunda eos ad novam structuram transformant.
+                Lapides non solum pulchritudinem naturae ostendunt, sed etiam in variis culturis usus magni momenti
+                sunt, ad aedificationem, ornamentum, et etiam medicinae. Fossilia et mineralia, quae in iis inclusa
+                sunt, praebent multa indicia de historia geologica terrae, et per studium eorum, homines multa de
+                evolutione planeti nostri ac de temporibus praeteritis cognoscere possunt. Eorum longissima vita et
+                resistentia erosionis eos inter materiam durissimam et stabilem faciunt, quae tam in contextu
+                geologico quam in usibus quotidianis hominum praeclaram locum tenet.
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section>
-  <section>
-
+    </div>
+    </div>
+    </div>
   </section>
   <!--Sections with Aside(Our Most Esteemed Rock)-->
-  <section>
+  <section id="EsteemedRock">
+    <div class="container-fluid pb-5" style="background-color: #81482C;">
+      <p class="text-center text-white">Welcome to your favorite part of our website. You will no witness our...</p>
+      <h1 class="text-center text-white">Most Esteemed Rock</h1>
+      <h1 class="text-center text-white display-3">THE ROCK!!!</h1>
+      <div class="text-center"><img class="rounded-circle" src="images/THEE_ROOCK.png" alt=""></div>
+      <div class="py-5 px-5 rounded" style="background-color: #E9D4CA;">
+        <p>Dwayne "The Rock" Johnson's tenure in WWE stands as one of the most electrifying and transformative periods
+          in
+          the history of professional wrestling. From his debut in 1996 as Rocky Maivia, the third-generation wrestler,
+          to
+          his eventual reinvention as "The Rock"—the brash, confident, and charismatic figure who became a global
+          icon—his
+          journey was nothing short of legendary. The Rock's rise was fueled by his natural athleticism, magnetic
+          personality, and unparalleled mic skills. His ability to connect with fans through unforgettable catchphrases
+          like “If ya smell what The Rock is cookin’” and his signature moves like "The People’s Elbow" quickly cemented
+          his place as one of the most entertaining and beloved Superstars of all time. Whether as a cocky heel or a fan
+          favorite, The Rock's words were just as powerful as his in-ring abilities, and his electrifying promos became
+          a
+          trademark of his career.</p>
 
-  </section>
-  <!--Free Section(Possibly The Rock Stop)-->
-  <section>
+        <aside class="float-right pl-5 ml-5 text-white border-left" style="width: 30%;">
+          <p>His iconic catchphrases, such as "Know Your Role" and "Can You Smell What The Rock Is
+            Cookin'?" became
+            synonymous with his larger-than-life persona. His feuds with legendary wrestlers like Stone Cold Steve
+            Austin
+            and Triple H were legendary, drawing millions of viewers and shaping the Attitude Era. The Rock's ability to
+            connect with the crowd, whether as a beloved hero or a despised villain, was unmatched. He could
+            effortlessly
+            command the audience's attention, eliciting cheers and boos with equal fervor.</p>
+        </aside>
 
+        <p>As a key figure during the Attitude Era, The Rock's rivalries with other WWE legends helped shape the
+          landscape
+          of professional wrestling. His iconic feuds with "Stone Cold" Steve Austin, Triple H, and Vince McMahon were
+          pivotal to the success of WWE during the late '90s and early 2000s. His bouts with Austin, including their
+          legendary clashes at WrestleMania 15, 17, and 19, are regarded as some of the best in WWE history, with each
+          match adding another layer to the mythology of the Attitude Era. The Rock's ability to seamlessly transition
+          between the roles of villain and hero, while maintaining his larger-than-life persona, kept fans engaged and
+          on
+          the edge of their seats. His charisma, athleticism, and storytelling in the ring made every match an event,
+          while his constant ability to entertain through his promos solidified him as one of the greatest WWE
+          Superstars
+          of all time.</p>
+
+        <p>The Rock’s impact on WWE is immeasurable, both in terms of championships and cultural influence. He became a
+          multi-time WWE Champion, a two-time Intercontinental Champion, a five-time Tag Team Champion, and won the
+          Royal
+          Rumble, marking his dominance in the company. His WrestleMania moments are legendary, particularly his
+          historic
+          battles with John Cena, which symbolized the passing of the torch to a new generation of WWE talent. Even
+          after
+          transitioning to a Hollywood career, The Rock remained a key figure in WWE, returning for high-profile
+          appearances that reminded fans of his roots. His legacy in WWE isn’t just measured by titles or matches, but
+          by
+          his enduring impact on the business and culture of professional wrestling. The Rock helped elevate WWE to new
+          heights of popularity, becoming a global megastar whose influence extends far beyond the squared circle. His
+          contributions to WWE and professional wrestling will be remembered as a defining chapter in the history of the
+          sport.</p>
+      </div>
+    </div>
   </section>
   <!--Footer-->
   <section>
-    <div>
-
+    <div class="container-fluid pt-5 border-top-0 mb-0" style="background-color:#643822;">
+      <div class=" row justify-content-center mb-5">
+        <a class=" col-md-6  text-center text-white list-unstyled text-decoration-none" href="#">Rock And Roll</a>
+        <div class="col-md-4 text-center">
+          <a class="text-center px-2 rounded"
+            href="https://www.amazon.com/s?k=rocks&crid=219G36T7K7I73&sprefix=rock%2Caps%2C136&ref=nb_sb_noss_2"
+            target="_blank"><img class="text-white mx-2" src="icons/amazon (1).svg" alt=""></a>
+          <a class="text-center px-2 rounded" href="https://github.com/DTBissy" target="_blank"><img class="mx-2"
+              src="icons/github.svg" alt=""></a>
+          <a class=" text-center px-2 rounded"
+            href="https://open.spotify.com/playlist/2LSaTUg9YpvFUe9A1AbOlG?si=47d09e68f6174d14&pt=551b9d32f39ec67eb9c2780b0f4f5e41"
+            target="_blank"><img class="mx-2" src="icons/spotify.svg" alt=""></a>
+        </div>
+      </div>
+      <div class=" d-flex justify-content-center align-content-end mt-0 text-white" style="opacity: 50%;">
+        <p>@WeOwnAllRocks</p>
+      </div>
     </div>
   </section>
   </main>
